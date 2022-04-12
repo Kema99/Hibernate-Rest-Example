@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.prueba1.main.rest.Generics.GenericMethods;
 import com.prueba1.main.rest.Models.Exchange;
-import com.prueba1.main.rest.modelo.Repos.ExchangeRepository;
+import com.prueba1.main.rest.Repos.ExchangeRepository;
 
 @Service
 public class ExchangeService extends GenericMethods<Exchange, Long> {
