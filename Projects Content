@@ -1,1 +1,1 @@
-CoinRestService ->  JPA Backend project with usual error codes. Refactorize code!.
+CoinRestService ->  JPA Backend project with usual error codes. Use the model Exchange for testing new things.
