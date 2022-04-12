@@ -1,4 +1,4 @@
-package com.prueba1.main.rest.modelo;
+package com.prueba1.main.rest.Models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,9 +11,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data @NoArgsConstructor @AllArgsConstructor
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name="users")
+@Table(name = "users")
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,5 +24,5 @@ public class User {
 	private String DNI;
 	@JoinColumn(name = "fiat_money")
 	private float fiatMoney;
-	
+
 }

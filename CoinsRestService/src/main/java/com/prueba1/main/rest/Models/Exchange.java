@@ -1,4 +1,4 @@
-package com.prueba1.main.rest.modelo;
+package com.prueba1.main.rest.Models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,13 +10,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data @NoArgsConstructor @AllArgsConstructor
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name="exchanges")
-public class Exchange{
+@Table(name = "exchanges")
+public class Exchange {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String name;
 }

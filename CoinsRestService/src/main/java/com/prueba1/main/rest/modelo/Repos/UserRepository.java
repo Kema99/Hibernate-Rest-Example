@@ -6,9 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.prueba1.main.rest.modelo.User;
+import com.prueba1.main.rest.Models.User;
+
 //@ComponentScan(basePackages = {"com.prueba1.main.Repos"})
-public interface UserRepository extends JpaRepository<User, Long>{
+public interface UserRepository extends JpaRepository<User, Long> {
 	@Query(value = "SELECT u FROM User u WHERE u.name = :name")
-	public List<User> getUsersByName(@Param("name") String name);
+	public List<User> getByName(@Param("name") String name);
 }

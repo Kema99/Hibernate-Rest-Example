@@ -1,4 +1,4 @@
-package com.prueba1.main.rest.modelo;
+package com.prueba1.main.rest.Models;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -14,19 +14,21 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data @NoArgsConstructor @AllArgsConstructor
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name="exchanges_users")
+@Table(name = "exchanges_users")
 public class UserOfExchange {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
 	@JoinColumn(name = "id_exchange", foreignKey = @ForeignKey(name = "user_exchanges_FK"))
 	private Exchange idExchange;
-	
+
 	@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
 	@JoinColumn(name = "id_user", foreignKey = @ForeignKey(name = "exchanges_user_FK"))
 	private User idUser;

@@ -6,12 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.prueba1.main.rest.modelo.Exchange;
+import com.prueba1.main.rest.Models.Exchange;
 
-public interface ExchangeRepository extends JpaRepository<Exchange, Long>{
+public interface ExchangeRepository extends JpaRepository<Exchange, Long> {
 	@Query(value = "SELECT e FROM Exchange e WHERE e.name = :name")
-	public List<Exchange> getExchangesByName(@Param("name") String name);
-	
-	@Query(value = "SELECT COUNT(e) FROM Exchange e")
-	public long countExchanges();
+	public List<Exchange> getByName(@Param("name") String name);
 }

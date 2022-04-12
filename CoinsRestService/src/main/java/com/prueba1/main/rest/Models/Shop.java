@@ -1,4 +1,4 @@
-package com.prueba1.main.rest.modelo;
+package com.prueba1.main.rest.Models;
 
 import java.time.LocalDate;
 
@@ -16,20 +16,22 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data @NoArgsConstructor @AllArgsConstructor
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
-@Table(name="shopping")
+@Table(name = "shopping")
 public class Shop {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
 	@JoinColumn(name = "coin", foreignKey = @ForeignKey(name = "coins_shopping_fk"))
 	private Coin coin;
-	
+
 	@JoinColumn(name = "shop_price")
 	private float shopPrice;
-	
+
 	private LocalDate date;
 }
