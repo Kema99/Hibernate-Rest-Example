@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.prueba1.main.rest.Generics.GenericMethods;
 import com.prueba1.main.rest.Models.User;
-import com.prueba1.main.rest.modelo.Repos.UserRepository;
+import com.prueba1.main.rest.Repos.UserRepository;
 
 @Service
 public class UserService extends GenericMethods<User, Long> {
