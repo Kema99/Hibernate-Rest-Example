@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.prueba1.main.rest.Generics.GenericMethods;
 import com.prueba1.main.rest.Models.Shop;
-import com.prueba1.main.rest.modelo.Repos.ShopRepository;
+import com.prueba1.main.rest.Repos.ShopRepository;
 
 @Service
 public class ShopService extends GenericMethods<Shop, Long> {
