@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.prueba1.main.rest.Generics.GenericMethods;
 import com.prueba1.main.rest.Models.UserOfExchange;
-import com.prueba1.main.rest.modelo.Repos.UserOfExchangeRepository;
+import com.prueba1.main.rest.Repos.UserOfExchangeRepository;
 
 @Service
 public class UserOfExchangeService extends GenericMethods<UserOfExchange, Long> {
