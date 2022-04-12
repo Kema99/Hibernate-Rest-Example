@@ -1,4 +1,4 @@
-package com.prueba1.main.rest.modelo.Repos;
+package com.prueba1.main.rest.Repos;
 
 import java.util.List;
 
