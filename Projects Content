@@ -1,1 +1,7 @@
-CoinRestService ->  JPA Backend project with usual error codes. Refactorize code!.
+1. CoinRestService -> Use the model Exchange for testing new things.
+  The proyect includes next tecnologies:
+    - Hibernate.
+    - MySQL (MariaDB).
+    - JPA SpringFramework.
+    - Lombok.
+    - ProjectReactor (reactive programming).
