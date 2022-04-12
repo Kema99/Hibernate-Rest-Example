@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.prueba1.main.rest.Generics.GenericMethods;
 import com.prueba1.main.rest.Models.Coin;
-import com.prueba1.main.rest.modelo.Repos.CoinRepository;
+import com.prueba1.main.rest.Repos.CoinRepository;
 
 @Service
 public class CoinService extends GenericMethods<Coin, Long> {
